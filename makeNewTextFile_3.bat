@@ -1,4 +1,5 @@
 @ECHO OFF
+:start
 ECHO This program will combine two text files from the same directory.
 
 ECHO The text files must be in the same directory as this program.
@@ -31,4 +32,4 @@ GOTO eof
 :help
 ECHO You must enter the name of a text file.  Example:  apples.txt.  Start again.
 PAUSE
-GOTO eof
+GOTO start
