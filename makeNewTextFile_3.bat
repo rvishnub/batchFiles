@@ -18,15 +18,15 @@ IF "%_NEW%"==help GOTO help
 IF "%_NEW%"=="" GOTO help
 
 @ECHO OFF
-break>%_NEW%
 
-type %_FIRST% >> %_NEW%
-type %_SECOND% >> %_NEW%
+type %_FIRST% >> %_NEW%.TXT
+echo. >> %_NEW%.TXT
+type %_SECOND% >> %_NEW%.TXT
 
 ECHO Here is your new file!
 
 PAUSE
-notepad %_NEW%
+notepad %_NEW%.TXT
 GOTO eof
 
 :help
